@@ -1,0 +1,47 @@
+body {
+    background-color: #060528;
+}
+
+.menu {
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    max-width: 300px; /* Limita el ancho máximo en pantallas grandes */
+    background-color: transparent; /* Sin fondo */
+    border-right: 1px solid #505076; /* Borde derecho visible */
+    color: white;
+}
+
+.menudentro {
+    margin-top: 50px;
+}
+
+.logo {
+    width: 100%; /* Ajuste al 100% del contenedor */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.linea {
+    width: 100%; /* La línea ocupa todo el ancho del contenedor */
+    height: 1px; /* Grosor de la línea */
+    background-color: #505076; /* Color de la línea */
+    margin: 30px 0; /* Espacio arriba y abajo de la línea */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        border-right: none; /* Quita el borde derecho en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        float: left; /* Flota a la izquierda en pantallas grandes */
+        width: 30vh; /* Ancho en pantallas grandes */
+    }
+}
